@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chunkArrayInGroups(arr,size)
+        {
+            let chunkArr=[];
+            while(arr.length)
+            {
+                  chunkArr.push(arr.splice(0,size))
+            }
+            console.log(arr.length);
+            return chunkArr;
+        }
+        console.log(chunkArrayInGroups(["a","b","c","d"],2));
+    </script>
+</body>
+</html>
